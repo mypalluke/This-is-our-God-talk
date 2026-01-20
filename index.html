@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“This Is Our God!” - Talk Notes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding-top: 75px; 
+        }
+        .scripture-box {
+            border-left: 4px solid #6366f1;
+            background-color: #f9fafb;
+            padding: 1.25rem;
+            margin: 1.25rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+        .instruction {
+            color: #b91c1c;
+            font-weight: 700;
+            font-style: italic;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        .user-text {
+            color: #334155;
+            font-weight: 400;
+            font-size: 1.15rem;
+        }
+        .pause-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #ef4444;
+            border-radius: 50%;
+            margin: 0 4px;
+            vertical-align: middle;
+            opacity: 0.8;
+        }
+        .time-marker {
+            background-color: #f1f5f9;
+            color: #475569;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            margin-right: 12px;
+            border: 1px solid #e2e8f0;
+            white-space: nowrap;
+        }
+        #timer-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .conclusion-block {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 p-4 md:p-10">
+
+    <!-- Fixed Countdown Timer Header - Subdued Gray -->
+    <div id="timer-container" class="bg-slate-800 text-white shadow-md p-3">
+        <div class="max-w-3xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="flex flex-col">
+                    <span class="text-[9px] uppercase tracking-widest text-slate-400 font-bold leading-none mb-1">Time Remaining</span>
+                    <span id="display" class="text-2xl font-mono font-bold leading-none">10:00</span>
+                </div>
+            </div>
+            <div class="flex space-x-2">
+                <button id="startPauseBtn" onclick="toggleTimer()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-md font-semibold text-xs transition-all uppercase tracking-wider">Start</button>
+                <button onclick="resetTimer()" class="bg-slate-700 hover:bg-slate-600 text-slate-300 px-3 py-2 rounded-md font-semibold transition-all uppercase text-[10px]">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+        
+        <!-- Subtle Header -->
+        <header class="text-center mb-12 border-b border-slate-100 pb-8">
+            <h1 class="text-3xl font-bold text-slate-900 tracking-tight">“This Is Our God!”</h1>
+            <p class="text-slate-500 font-medium uppercase text-xs tracking-widest mt-2">10 Minute Discourse</p>
+        </header>
+
+        <div class="space-y-12 mb-20">
+
+            <!-- Section 1: Introduction -->
+            <section>
+                <div class="section-header">
+                    <span class="time-marker">10:00 LEFT</span>
+                    <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wide">Introduction</h2>
+                </div>
+                <div class="space-y-6">
+                    <p class="user-text leading-relaxed text-slate-500 italic">
+                        <span class="instruction">Illustrate:</span> Imagine a child being bothered by a bully, feeling completely helpless.<span class="pause-dot"></span> 
+                        But at the right moment, his father appears. That child is no longer disarmed; he is proud and confident because he knows who is standing behind him.
+                    </p>
+                    <p class="user-text">
+                        We have every reason to feel similarly about Jehovah. As you gain insight into his qualities, you realize you have the best Father imaginable. Our theme tonight is: <strong>"This Is Our God!"</strong>
+                    </p>
+                    <p class="user-text">
+                        Why does this matter? Because the more we draw close to him, the stronger our confidence gets. Tonight, we will look at what Jehovah gives us now and what he has in store for the future. This confidence motivates us to witness to his name at every opportunity. Notice how this joy is described in the Bible at Isaiah 25:9.
+                    </p>
+                    
+                    <div class="scripture-box">
+                        <span class="instruction">Read Isaiah 25:9</span>
+                        <p class="text-xl font-semibold italic text-slate-900 leading-snug mt-2">
+                            “In that day they will say: “Look! This is our God!<span class="pause-dot"></span> We have hoped in him, And he will save us. This is Jehovah! We have hoped in him. Let us be joyful and rejoice in the salvation by him.””
+                        </p>
+                    </div>
+                    <p class="user-text">
+                        <span class="instruction">Explain:</span> We have every reason to be proud of our God and happy!
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 2: Body Point 1 -->
+            <section>
+                <div class="section-header">
+                    <span class="time-marker">8:00 LEFT</span>
+                    <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wide">1. Taste — Gift of a Creator</h2>
+                </div>
+                <div class="space-y-6">
+                    <p class="user-text">
+                        Lets talk about food! Who likes food? Why do you like food? Among all the senses, taste really shows Jehovah’s thoughtfulness and love. Jehovah knows that we don't just eat for fuel; he designed us to find joy in life. Notice how he describes his generosity at Isaiah 25:6.
+                    </p>
+                    
+                    <div class="scripture-box">
+                        <span class="instruction">Read Isaiah 25:6</span>
+                        <p class="text-xl font-semibold italic text-slate-900 leading-snug mt-2">
+                            “In this mountain+ Jehovah of armies will make for all the peoples A banquet of rich dishes, A banquet of fine wine,* Of rich dishes filled with marrow, Of fine, filtered wine.”
+                        </p>
+                    </div>
+
+                    <p class="user-text">
+                        <span class="instruction">Explain:</span> Taste not only protects us from harm but allows us to distinguish flavors like the sweetness of a fresh orange or the cool of mint. Each tiny taste bud contains about 100 cells triggering signals to the brain. This shows Jehovah wants us to enjoy an enriching dimension of life.<span class="pause-dot"></span> In the new world, this sense will be fully satisfied. There will be an "abundance of grain" and "fine physical food" to enjoy under his Kingdom.
+                    </p>
+                    <p class="user-text italic text-slate-500">
+                        <span class="instruction">Illustrate:</span> Imagine if eating was as boring as filling up our cars with gas. We would see we are getting low and then just fill up and walk away. Instead, eating is one of the great joys we have in life.<span class="pause-dot"></span>
+                    </p>
+                    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200 text-slate-700">
+                        <span class="instruction block mb-1">Apply (Ministry):</span> During your daily routine, ask: "Do you ever wonder why we were made to enjoy food so much rather than just needing it for energy?"
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Body Point 2 -->
+            <section>
+                <div class="section-header">
+                    <span class="time-marker">5:00 LEFT</span>
+                    <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wide">2. Swallowing Up the Shroud</h2>
+                </div>
+                <div class="space-y-6">
+                    <p class="user-text">
+                        We’ve talked about food, but we know that today, even the most joyful meal is eventually overshadowed by the passage of time. Jehovah promises to remove that shadow. Notice his promise at Isaiah 25:7, 8
+                    </p>
+                    
+                    <div class="scripture-box">
+                        <span class="instruction">Read Isaiah 25:7, 8</span>
+                        <p class="text-xl font-semibold italic text-slate-900 leading-snug mt-2">
+                            “In this mountain he will do away with* the shroud that is enveloping all the peoples... He will swallow up* death forever,<span class="pause-dot"></span>+ And the Sovereign Lord Jehovah will wipe away the tears from all faces.”
+                        </p>
+                    </div>
+
+                    <p class="user-text">
+                        <span class="instruction">Explain:</span> sin and death are “the shroud.” But verse 8 says Jehovah will "swallow up death forever." He doesn't just push it back; he consumes it so it no longer exists. He "wipes the tears from all faces"—showing his warmth and empathy.
+                    </p>
+                    <p class="user-text italic">
+                        <span class="instruction">Illustrate:</span> WE ARE COVERED IN A SHROUD. Our vision is skewed by sin. In paradise we will pursue anything: physics, chemistry, music, or art. Many say they wouldn’t want to live forever because they think it would be boring—their vision is skewed. We can share that vision with them!
+                    </p>
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <span class="instruction block mb-2 underline">Apply (Picture):</span> Look closely at the older brother. Physically limited... medical needs... but notice: he has his Bible open. He is "bragging" to his caregiver about his Father.<span class="pause-dot"></span> Even under the shroud of old age, his vision isn't skewed. He sees the "Grand Provider."
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Final Conclusion (Subdued Style) -->
+            <section class="conclusion-block">
+                <div class="section-header mb-6">
+                    <span class="time-marker">1:30 LEFT</span>
+                    <h2 class="text-lg font-bold text-slate-900 uppercase tracking-widest">Final Conclusion</h2>
+                </div>
+                <div class="space-y-8 text-slate-800">
+                    <p class="text-xl font-semibold leading-tight">How we delight in the many things Jehovah gives us! We are priviledged to be among the only group on the earth at the moment that worship him in the elevated way that he approves as prophisied at isaiah 2:2.</p>
+                    
+                    <p class="text-lg">Just think about the overwhelming Joy we will feel when he resurects our loved ones and all the people in the world will be friends of peace. Thank Jehovah for our resurection hope!<span class="pause-dot"></span></p>
+                    
+                    <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+                        <span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 mb-2 block italic">1 Thes 4:13</span>
+                        <p class="text-lg italic font-medium leading-snug text-slate-700">“Moreover, brothers, we do not want you to be ignorant about those who are sleeping in death, so that you may not sorrow as the rest do who have no hope.”</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <p class="text-lg font-bold text-indigo-700 uppercase tracking-wide">Meditate on this hope. Why is it important?</p>
+                        <p class="text-lg leading-relaxed">Because the threat of death is a powerful weapon those that are under the control of satan use it to try to get people to betray their friends or give up their faith or convictions.</p>
+                        <p class="text-lg leading-relaxed border-b border-slate-200 pb-2">Nothing they do can seperate us from Jehovah. If they kill us. Jehovah has the power to resurect us!</p>
+                        <p class="text-lg font-bold">What remarkable wisdom Jehovah has in giving us this hope.</p>
+                    </div>
+                    
+                    <div class="pt-6 border-t border-slate-200">
+                        <p class="text-xl font-bold uppercase text-indigo-800">He disarms one of satans most powerful weapons and arms us with courage!<span class="pause-dot"></span></p>
+                        <p class="text-xl font-semibold mt-4 italic text-slate-600">what a God we serve! Yes this is our God! Yes Jehovah is our God and Friend!</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="text-center text-[10px] text-slate-400 uppercase tracking-[0.2em] font-medium py-10">
+            End of Discourse — Isaiah 25:9
+        </footer>
+    </div>
+
+    <script>
+        let timeLeft = 600; // 10 minutes in seconds
+        let timerId = null;
+        const display = document.getElementById('display');
+        const btn = document.getElementById('startPauseBtn');
+
+        function updateDisplay() {
+            const mins = Math.floor(timeLeft / 60);
+            const secs = timeLeft % 60;
+            display.textContent = `${mins}:${secs.toString().padStart(2, '0')}`;
+            
+            if (timeLeft <= 60) {
+                display.classList.add('text-red-600');
+            } else {
+                display.classList.remove('text-red-600');
+            }
+        }
+
+        function toggleTimer() {
+            if (timerId) {
+                clearInterval(timerId);
+                timerId = null;
+                btn.textContent = 'START';
+                btn.classList.remove('bg-red-600');
+                btn.classList.add('bg-indigo-600');
+            } else {
+                timerId = setInterval(() => {
+                    if (timeLeft > 0) {
+                        timeLeft--;
+                        updateDisplay();
+                    } else {
+                        clearInterval(timerId);
+                        timerId = null;
+                        btn.textContent = 'DONE';
+                    }
+                }, 1000);
+                btn.textContent = 'PAUSE';
+                btn.classList.remove('bg-indigo-600');
+                btn.classList.add('bg-red-600');
+            }
+        }
+
+        function resetTimer() {
+            clearInterval(timerId);
+            timerId = null;
+            timeLeft = 600;
+            btn.textContent = 'START';
+            btn.classList.remove('bg-red-600');
+            btn.classList.add('bg-indigo-600');
+            updateDisplay();
+        }
+    </script>
+</body>
+</html>
